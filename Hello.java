@@ -49,11 +49,11 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
     }
     //===================================================================================================
 
-    
+
 
     //=========================== Soal 3: Menukar Nilai Variabel ===========================
-    public static void soal3() { // Mendefinisikan metode soal3
-        System.out.println("======= Soal No. 3 ======="); // Menampilkan teks untuk soal 3
+    public static void soal3() {
+        System.out.println("======= Soal No. 3 =======");
     }
 }
 
