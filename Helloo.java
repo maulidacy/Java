@@ -1,5 +1,91 @@
-public class Helloo {
+/*public class Helloo {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
+}*/
+
+import java.util.Scanner; // Mengimpor kelas Scanner untuk input
+
+public class Helloo { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesuai dengan nama file
+
+    public static void main(String[] args) {
+        //soal1(); // Memanggil metode soal1 untuk menampilkan soal 1
+        //soal2();
+        //soal3();
+        soal4();
+    }
+
+    //=========================== Soal 1: Deklarasi dan Inisialisasi Variabel ===========================
+    public static void soal1() {
+        System.out.println("======= Soal No.1: Deklarasi dan Inisialisasi Variabel =======");
+
+        // Deklarasi dan Inisialisasi Variabel
+        String nama = "Maulida Cahya";
+        int usia = 15;
+        double beratBadan = 45;
+        float tinggiBadan = 160;
+        char golonganDarah = 'F';
+        boolean isMahasiswa = true;
+
+        System.out.println("Nama: " + nama);
+        System.out.println("Usia: " + usia + " tahun");
+        System.out.println("Berat Badan: " + beratBadan + " kg");
+        System.out.println("Tinggi Badan: " + tinggiBadan + " cm");
+        System.out.println("Golongan Darah: " + golonganDarah);
+        System.out.println("Mahasiswa? " + isMahasiswa);
+    }
+    //===================================================================================================
+
+
+
+    //=========================== Soal 2: Menghitung Luas Lingkaran ===========================
+    public static void soal2() { // Mendefinisikan metode soal2
+        System.out.println("======= Soal No. 2: Menghitung Luas Lingkaran =======");
+
+        try (Scanner scanner = new Scanner(System.in)) { // Menggunakan try-with-resources untuk Scanner
+            double pi = Math.PI; // Mendapatkan nilai pi dari kelas Math
+            System.out.print("Masukkan jari-jari: "); // Menampilkan pesan untuk soal 2
+            
+            // Membaca input dari pengguna dan mengonversinya ke double
+            double jawaban2 = Double.parseDouble(scanner.nextLine()); 
+            
+            // Mengalikan jawaban dengan pi
+            double hasil = jawaban2 * pi; 
+            System.out.println("Luas Lingkaran: " +  hasil); // Menampilkan hasil
+        } // Scanner akan otomatis ditutup di sini
+    }
+    //=========================================================================================
+
+
+
+    //=========================== Soal 3: Menukar Nilai Variabel ===========================
+    public static void soal3() {
+        System.out.println("======= Soal No. 3: Menukar Nilai Variabel =======");
+
+        int a = 5, b = 10;
+
+        System.out.println("Sebelum ditukar: " + "a = " + a + " b = " + b);
+        System.out.println("Setelah ditukar: " + "a = " + b + " b = " + a);
+    }
+    //======================================================================================
+
+
+
+    //=========================== Soal 4: Konversi Tipe Data ===========================
+    public static void soal4() {
+        System.out.println("======= Soal No. 4: Konversi Tipe Data =======");
+    
+        int angka = 10;
+        double angkaDua = angka;
+        char huruf = 'A';
+        int kodeHuruf = 66;
+
+        System.out.println("int ke double: " + angka + " -> " + (double)angka);
+        System.out.println("double ke int: " + angkaDua + " -> " + (int)angkaDua);
+        System.out.println("char ke int: " + huruf + " -> " + (int)huruf);
+        System.out.println("int ke char: " + angka + " -> " + (char)kodeHuruf);
+    }
+    //==================================================================================
 }
+
+

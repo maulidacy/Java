@@ -5,12 +5,13 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
     public static void main(String[] args) {
         //soal1(); // Memanggil metode soal1 untuk menampilkan soal 1
         //soal2();
-        soal3();
+        //soal3();
+        soal4();
     }
 
     //=========================== Soal 1: Deklarasi dan Inisialisasi Variabel ===========================
     public static void soal1() {
-        System.out.println("======= Soal No.1 =======");
+        System.out.println("======= Soal No.1: Deklarasi dan Inisialisasi Variabel =======");
 
         // Deklarasi dan Inisialisasi Variabel
         String nama = "Maulida Cahya";
@@ -33,7 +34,7 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
 
     //=========================== Soal 2: Menghitung Luas Lingkaran ===========================
     public static void soal2() { // Mendefinisikan metode soal2
-        System.out.println("======= Soal No. 2 =======");
+        System.out.println("======= Menghitung Luas Lingkaran =======");
 
         try (Scanner scanner = new Scanner(System.in)) { // Menggunakan try-with-resources untuk Scanner
             double pi = Math.PI; // Mendapatkan nilai pi dari kelas Math
@@ -47,14 +48,38 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
             System.out.println("Luas Lingkaran: " +  hasil); // Menampilkan hasil
         } // Scanner akan otomatis ditutup di sini
     }
-    //===================================================================================================
+    //=========================================================================================
 
 
 
     //=========================== Soal 3: Menukar Nilai Variabel ===========================
     public static void soal3() {
-        System.out.println("======= Soal No. 3 =======");
+        System.out.println("======= Soal No. 3: Menukar Nilai Variabel =======");
+
+        int a = 5, b = 10;
+
+        System.out.println("Sebelum ditukar: " + "a = " + a + " b = " + b);
+        System.out.println("Setelah ditukar: " + "a = " + b + " b = " + a);
     }
+    //======================================================================================
+
+
+
+    //=========================== Soal 4: Konversi Tipe Data ===========================
+    public static void soal4() {
+        System.out.println("======= Soal No. 4: Konversi Tipe Data =======");
+    
+        int angka = 10;
+        double nilaiDouble = 9.8;
+        char huruf = 'A';
+        int kodeHuruf = 66;
+
+        System.out.println("int ke double: " + angka + " -> " + (double)angka);
+        System.out.println("double ke int: " + nilaiDouble + " -> " + (int)nilaiDouble);
+        System.out.println("char ke int: " + huruf + " -> " + (int)huruf);
+        System.out.println("int ke char: " + kodeHuruf + " -> " + (char)kodeHuruf);
+    }
+    //==================================================================================
 }
 
 
