@@ -4,12 +4,13 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
 
     public static void main(String[] args) {
         //soal1(); // Memanggil metode soal1 untuk menampilkan soal 1
-        soal2();
+        //soal2();
+        soal3();
     }
 
     //=========================== Soal 1: Deklarasi dan Inisialisasi Variabel ===========================
     public static void soal1() {
-        System.out.println("soal 1");
+        System.out.println("======= Soal No.1 =======");
 
         // Deklarasi dan Inisialisasi Variabel
         String nama = "Maulida Cahya";
@@ -32,9 +33,10 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
 
     //=========================== Soal 2: Menghitung Luas Lingkaran ===========================
     public static void soal2() { // Mendefinisikan metode soal2
-        System.out.println("soal 1");
+        System.out.println("======= Soal No. 2 =======");
+
         try (Scanner scanner = new Scanner(System.in)) { // Menggunakan try-with-resources untuk Scanner
-            double pi = 3.14; // Mendapatkan nilai pi dari kelas Math
+            double pi = Math.PI; // Mendapatkan nilai pi dari kelas Math
             System.out.print("Masukkan jari-jari: "); // Menampilkan pesan untuk soal 2
             
             // Membaca input dari pengguna dan mengonversinya ke double
@@ -42,15 +44,17 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
             
             // Mengalikan jawaban dengan pi
             double hasil = jawaban2 * pi; 
-            System.out.println("Hasil dari " + jawaban2 + " dikali pi (" + pi + ") adalah: " + hasil); // Menampilkan hasil
+            System.out.println("Luas Lingkaran: " +  hasil); // Menampilkan hasil
         } // Scanner akan otomatis ditutup di sini
     }
     //===================================================================================================
 
+    
 
-/*
-public class Helloo {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
+    //=========================== Soal 3: Menukar Nilai Variabel ===========================
+    public static void soal3() { // Mendefinisikan metode soal3
+        System.out.println("======= Soal No. 3 ======="); // Menampilkan teks untuk soal 3
     }
-}*/
+}
+
+
