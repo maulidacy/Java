@@ -6,7 +6,8 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
         //soal1(); // Memanggil metode soal1 untuk menampilkan soal 1
         //soal2();
         //soal3();
-        soal4();
+        //soal4();
+        soal5();
     }
 
     //=========================== Soal 1: Deklarasi dan Inisialisasi Variabel ===========================
@@ -80,6 +81,40 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
         System.out.println("int ke char: " + kodeHuruf + " -> " + (char)kodeHuruf);
     }
     //==================================================================================
-}
+
+
+    //=========================== Soal 5: Membuat Kelas dan Objek ===========================
+    public static void soal5() {
+        System.out.println("======= Soal 5: Membuat Kelas dan Objek =======");
+            
+            Mahasiswa mahasiswa1 = new Mahasiswa("Budi Santoso", "A11.2023001", "Teknik Informatika", 2023);
+            mahasiswa1.tampilkanInfo();
+        }
+    }
+    
+    class Mahasiswa {
+        // Atribut
+        private String nama;
+        private String nim;
+        private String prodi;
+        private int angkatan;
+    
+        // Constructor
+        public Mahasiswa(String nama, String nim, String prodi, int angkatan) {
+            this.nama = nama;
+            this.nim = nim;
+            this.prodi = prodi;
+            this.angkatan = angkatan;
+        }
+    
+        // Metode untuk menampilkan informasi mahasiswa
+        public void tampilkanInfo() {
+            System.out.println("Nama: " + nama);
+            System.out.println("NIM: " + nim);
+            System.out.println("Prodi: " + prodi);
+            System.out.println("Angkatan: " + angkatan);
+        }
+    }
+    //=======================================================================================
 
 
