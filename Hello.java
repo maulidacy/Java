@@ -122,4 +122,10 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
         System.out.println("======= Soal No. 6: Cek Bilangan Positif atau Negatif =======");
         int bilangan = -5;
         if (bilangan > 0) {
+            System.out.println("Bilangan " + bilangan + " adalah positif");
+            } else if (bilangan < 0) {
+                System.out.println("Bilangan " + bilangan + " adalah negatif");
+                } else {
+                    System.out.println("Bilangan " + bilangan + " adalah nol");
+                    }
     }
