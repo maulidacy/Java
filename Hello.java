@@ -7,7 +7,8 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
         //soal2();
         //soal3();
         //soal4();
-        soal5();
+        //soal5();
+        soal6();
     }
 
     //=========================== Soal 1: Deklarasi dan Inisialisasi Variabel ===========================
@@ -87,7 +88,7 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
     public static void soal5() {
         System.out.println("======= Soal 5: Membuat Kelas dan Objek =======");
             
-            Mahasiswa mahasiswa1 = new Mahasiswa("Budi Santoso", "A11.2023001", "Teknik Informatika", 2023);
+            Mahasiswa mahasiswa1 = new Mahasiswa("Maulida Cahya", "A11.2023.15470", "Teknik Informatika", 2023);
             mahasiswa1.tampilkanInfo();
         }
     }
@@ -117,4 +118,6 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
     }
     //=======================================================================================
 
-
+    public static void soal6() {
+        
+    }
