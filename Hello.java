@@ -119,5 +119,7 @@ public class Hello { // Mendefinisikan kelas dengan nama 'Hello' nama harus sesu
     //=======================================================================================
 
     public static void soal6() {
-        
+        System.out.println("======= Soal No. 6: Cek Bilangan Positif atau Negatif =======");
+        int bilangan = -5;
+        if (bilangan > 0) {
     }
